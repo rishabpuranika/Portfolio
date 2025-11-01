@@ -18,7 +18,7 @@ export default function Skills() {
       color: 'from-blue-500 to-purple-500'
     },
     {
-      icon: <Globe size={32} />,
+      icon: <Globe size={70} />,
       title: 'Web Technologies',
       skills: ['React.js', 'TypeScript', 'Streamlit'],
       color: 'from-purple-500 to-pink-500'
@@ -30,7 +30,7 @@ export default function Skills() {
       color: 'from-pink-500 to-red-500'
     },
     {
-      icon: <Cloud size={32} />,
+      icon: <Cloud size={70} />,
       title: 'DevOps & Cloud',
       skills: ['Docker', 'Kubernetes', 'n8n'],
       color: 'from-red-500 to-orange-500'
@@ -108,10 +108,10 @@ export default function Skills() {
         <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50" style={{ height: '100px', position: 'relative', overflow: 'hidden', marginTop: '3rem', marginBottom: '2rem', display: 'flex', alignItems: 'center' }}>
           <LogoLoop
             logos={techLogos}
-            speed={120}
+            speed={60}
             direction="left"
             logoHeight={48}
-            gap={40}
+            gap={35}
             pauseOnHover
             scaleOnHover
             fadeOut={true}

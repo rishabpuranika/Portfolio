@@ -71,9 +71,9 @@ export default function Education() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="border-l-2 border-cyan-500 pl-4 py-2">
-                  <h4 className="text-lg font-semibold text-white mb-1">
+                  <a href="https://www.coursera.org/account/accomplishments/verify/O7IFDIPB7EDB" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-white mb-1 hover:text-cyan-400 transition-colors">
                     Supervised Machine Learning: Regression and Classification
-                  </h4>
+                  </a>
                   <p className="text-cyan-400 text-sm mb-1">Coursera</p>
                   <p className="text-gray-400 text-sm">
                     Comprehensive course on ML fundamentals, regression, and classification techniques
@@ -81,9 +81,9 @@ export default function Education() {
                 </div>
 
                 <div className="border-l-2 border-blue-500 pl-4 py-2">
-                  <h4 className="text-lg font-semibold text-white mb-1">
+                  <a href="https://www.coursera.org/account/accomplishments/records/K25UPU8O3XE6" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-white mb-1 hover:text-blue-400 transition-colors">
                     Advanced Learning Algorithms
-                  </h4>
+                  </a>
                   <p className="text-blue-400 text-sm mb-1">Coursera</p>
                   <p className="text-gray-400 text-sm">
                     Deep dive into neural networks and advanced ML algorithms
@@ -93,9 +93,9 @@ export default function Education() {
 
               <div className="space-y-4">
                 <div className="border-l-2 border-purple-500 pl-4 py-2">
-                  <h4 className="text-lg font-semibold text-white mb-1">
+                  <a href="https://www.hackerrank.com/profile/rishabpuranika_1" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-white mb-1 hover:text-purple-400 transition-colors">
                     5 Star in C++
-                  </h4>
+                  </a>
                   <p className="text-purple-400 text-sm mb-1">HackerRank</p>
                   <p className="text-gray-400 text-sm">
                     Demonstrated advanced proficiency in C++ programming
@@ -103,9 +103,9 @@ export default function Education() {
                 </div>
 
                 <div className="border-l-2 border-pink-500 pl-4 py-2">
-                  <h4 className="text-lg font-semibold text-white mb-1">
+                  <a href="https://www.hackerrank.com/profile/rishabpuranika_1" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-white mb-1 hover:text-pink-400 transition-colors">
                     5 Star in SQL
-                  </h4>
+                  </a>
                   <p className="text-pink-400 text-sm mb-1">HackerRank</p>
                   <p className="text-gray-400 text-sm">
                     Expert-level database query optimization and management

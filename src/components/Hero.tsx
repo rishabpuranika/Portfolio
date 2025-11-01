@@ -15,8 +15,9 @@ export default function Hero() {
         <div className="text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             <GradientText
-              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-              animationSpeed={3}
+              // colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              colors={["#FF474C", "#ffa500", "#FF474C", "#ffa500", "#FF474C"]}
+              animationSpeed={6}
               showBorder={false}
               className="custom-class"
             >

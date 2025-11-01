@@ -36,7 +36,7 @@ export default function Projects() {
         'AES-256 encryption for secure storage',
         'Intuitive UI with seamless user experience'
       ],
-      github: 'https://github.com/rishabpuranika/passwordgeneratorandstorage',
+      github: 'https://github.com/rishabpuranika/PassForge',
       color: 'from-purple-500 to-pink-500'
     },
     {
@@ -48,7 +48,7 @@ export default function Projects() {
         'Real-time interactive web interface',
         'Comprehensive text preprocessing pipeline with TF-IDF'
       ],
-      github: 'https://github.com/rishabpuranika/Fake-News-Prediction',
+      github: 'https://github.com/rishabpuranika/FakeNewsPrediction',
       color: 'from-pink-500 to-red-500'
     }
   ];

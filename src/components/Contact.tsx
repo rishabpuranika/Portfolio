@@ -18,7 +18,7 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
-              <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300">
+              <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
 
               <div className="space-y-4">
@@ -86,7 +86,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-9 border border-slate-700/50">
             <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
             <p className="text-gray-300 mb-6">
               I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
@@ -94,7 +94,7 @@ export default function Contact() {
 
             <div className="space-y-4">
               <p className="text-gray-400">
-                Whether you want to collaborate on a project, need help with Machine Learning or Full Stack Development,
+                Whether you want to collaborate on a project, or for any opportunities,
                 or just want to say hi, feel free to reach out!
               </p>
 
@@ -105,7 +105,7 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center text-sm text-gray-400">
                   <span className="text-cyan-400 mr-2">▹</span>
-                  <span>Available for consulting</span>
+                  <span>Open for Job Opportunities</span>
                 </div>
                 <div className="flex items-center text-sm text-gray-400">
                   <span className="text-cyan-400 mr-2">▹</span>

@@ -1,4 +1,5 @@
 import { ExternalLink, Github } from 'lucide-react';
+import SpotlightCard from './SpotlightCard';
 
 export default function Projects() {
   const projects = [
@@ -66,10 +67,10 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="group bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105"
-            >
+            <SpotlightCard key={index} className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+              <div
+                className="group bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105"
+              >
               <div className="flex items-start justify-between mb-4">
                 <h3 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">
                   {project.title}
@@ -118,11 +119,13 @@ export default function Projects() {
                 <ExternalLink size={16} className="ml-2" />
               </a>
             </div>
+            </SpotlightCard>
           ))}
         </div>
 
-        <div className="mt-16 bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50">
-          <h3 className="text-2xl font-bold text-cyan-400 mb-6">Open Source Contributions</h3>
+        <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+          <div className="mt-16 bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50">
+            <h3 className="text-2xl font-bold text-cyan-400 mb-6">Open Source Contributions</h3>
           <div className="space-y-4">
             <div>
               <h4 className="text-xl font-semibold text-white mb-2">Dantotsu App</h4>
@@ -142,7 +145,8 @@ export default function Projects() {
               </ul>
             </div>
           </div>
-        </div>
+          </div>
+        </SpotlightCard>
       </div>
     </section>
   );

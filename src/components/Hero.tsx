@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 import GradientText from './GradientText';
 import ShinyText from './ShinyText';
+import StarBorder from './StarBorder';
 
 export default function Hero() {
   return (
@@ -62,9 +63,12 @@ export default function Hero() {
             </a>
           </div>
 
-          <a
+          <StarBorder
+            as="a"
             href="#contact"
             className="inline-block px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-full font-medium hover:shadow-lg hover:shadow-slate-500/50 hover:scale-105 transition-all duration-300 animate-fade-in-delay-4 border border-slate-600"
+            color="cyan"
+            speed="5s"
           >
             <ShinyText
               text="Get In Touch"
@@ -72,7 +76,7 @@ export default function Hero() {
               speed={3}
               className='custom-class'
             />
-          </a>
+          </StarBorder>
         </div>
       </div>
 

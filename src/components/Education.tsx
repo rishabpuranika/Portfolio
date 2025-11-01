@@ -1,4 +1,5 @@
 import { GraduationCap, Award } from 'lucide-react';
+import SpotlightCard from './SpotlightCard';
 
 export default function Education() {
   return (
@@ -60,58 +61,60 @@ export default function Education() {
           </div>
         </div>
 
-        <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50">
-          <div className="flex items-center mb-6">
-            <Award size={32} className="text-cyan-400 mr-3" />
-            <h3 className="text-2xl font-bold text-white">Certifications & Achievements</h3>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="space-y-4">
-              <div className="border-l-2 border-cyan-500 pl-4 py-2">
-                <h4 className="text-lg font-semibold text-white mb-1">
-                  Supervised Machine Learning: Regression and Classification
-                </h4>
-                <p className="text-cyan-400 text-sm mb-1">Coursera</p>
-                <p className="text-gray-400 text-sm">
-                  Comprehensive course on ML fundamentals, regression, and classification techniques
-                </p>
-              </div>
-
-              <div className="border-l-2 border-blue-500 pl-4 py-2">
-                <h4 className="text-lg font-semibold text-white mb-1">
-                  Advanced Learning Algorithms
-                </h4>
-                <p className="text-blue-400 text-sm mb-1">Coursera</p>
-                <p className="text-gray-400 text-sm">
-                  Deep dive into neural networks and advanced ML algorithms
-                </p>
-              </div>
+        <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50">
+            <div className="flex items-center mb-6">
+              <Award size={32} className="text-cyan-400 mr-3" />
+              <h3 className="text-2xl font-bold text-white">Certifications & Achievements</h3>
             </div>
 
-            <div className="space-y-4">
-              <div className="border-l-2 border-purple-500 pl-4 py-2">
-                <h4 className="text-lg font-semibold text-white mb-1">
-                  5 Star in C++
-                </h4>
-                <p className="text-purple-400 text-sm mb-1">HackerRank</p>
-                <p className="text-gray-400 text-sm">
-                  Demonstrated advanced proficiency in C++ programming
-                </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="border-l-2 border-cyan-500 pl-4 py-2">
+                  <h4 className="text-lg font-semibold text-white mb-1">
+                    Supervised Machine Learning: Regression and Classification
+                  </h4>
+                  <p className="text-cyan-400 text-sm mb-1">Coursera</p>
+                  <p className="text-gray-400 text-sm">
+                    Comprehensive course on ML fundamentals, regression, and classification techniques
+                  </p>
+                </div>
+
+                <div className="border-l-2 border-blue-500 pl-4 py-2">
+                  <h4 className="text-lg font-semibold text-white mb-1">
+                    Advanced Learning Algorithms
+                  </h4>
+                  <p className="text-blue-400 text-sm mb-1">Coursera</p>
+                  <p className="text-gray-400 text-sm">
+                    Deep dive into neural networks and advanced ML algorithms
+                  </p>
+                </div>
               </div>
 
-              <div className="border-l-2 border-pink-500 pl-4 py-2">
-                <h4 className="text-lg font-semibold text-white mb-1">
-                  5 Star in SQL
-                </h4>
-                <p className="text-pink-400 text-sm mb-1">HackerRank</p>
-                <p className="text-gray-400 text-sm">
-                  Expert-level database query optimization and management
-                </p>
+              <div className="space-y-4">
+                <div className="border-l-2 border-purple-500 pl-4 py-2">
+                  <h4 className="text-lg font-semibold text-white mb-1">
+                    5 Star in C++
+                  </h4>
+                  <p className="text-purple-400 text-sm mb-1">HackerRank</p>
+                  <p className="text-gray-400 text-sm">
+                    Demonstrated advanced proficiency in C++ programming
+                  </p>
+                </div>
+
+                <div className="border-l-2 border-pink-500 pl-4 py-2">
+                  <h4 className="text-lg font-semibold text-white mb-1">
+                    5 Star in SQL
+                  </h4>
+                  <p className="text-pink-400 text-sm mb-1">HackerRank</p>
+                  <p className="text-gray-400 text-sm">
+                    Expert-level database query optimization and management
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </SpotlightCard>
       </div>
     </section>
   );

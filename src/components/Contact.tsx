@@ -1,4 +1,6 @@
 import { Mail, Phone, Github, Linkedin, MapPin } from 'lucide-react';
+import StarBorder from './StarBorder';
+import SpotlightCard from './SpotlightCard';
 
 export default function Contact() {
   return (
@@ -15,7 +17,8 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
-            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300">
+            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+              <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
 
               <div className="space-y-4">
@@ -49,13 +52,14 @@ export default function Contact() {
                   <div className="p-2 bg-purple-500/10 rounded-lg mr-4">
                     <MapPin size={20} className="text-purple-400" />
                   </div>
-                  <div>
-                    <p className="text-sm text-gray-400">Location</p>
-                    <p className="font-medium">Bangalore, India</p>
-                  </div>
+                   <div>
+                     <p className="text-sm text-gray-400">Location</p>
+                     <p className="font-medium">Bangalore, India</p>
+                   </div>
+                 </div>
                 </div>
               </div>
-            </div>
+            </SpotlightCard>
 
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
               <h3 className="text-xl font-bold text-white mb-4">Connect on Social Media</h3>
@@ -109,12 +113,15 @@ export default function Contact() {
                 </div>
               </div>
 
-              <a
+              <StarBorder
+                as="a"
                 href="mailto:145rishab@gmail.com"
                 className="inline-block w-full mt-6 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium text-center hover:shadow-lg hover:shadow-cyan-500/50 hover:scale-105 transition-all duration-300"
+                color="cyan"
+                speed="5s"
               >
                 Send Email
-              </a>
+              </StarBorder>
             </div>
           </div>
         </div>

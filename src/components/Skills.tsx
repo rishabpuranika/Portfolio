@@ -1,6 +1,7 @@
 import { Code, Database, Cloud, Cpu, Terminal, Globe } from 'lucide-react';
 import LogoLoop from './LogoLoop';
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import SpotlightCard from './SpotlightCard';
 
 export default function Skills() {
   const skillCategories = [
@@ -63,10 +64,8 @@ export default function Skills() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <div
-              key={index}
-              className="group bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105"
-            >
+            <SpotlightCard key={index} className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+              <div className="group bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <div className={`inline-block p-3 rounded-lg bg-gradient-to-r ${category.color} bg-opacity-10 mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <div className="text-cyan-400">
                   {category.icon}
@@ -86,8 +85,9 @@ export default function Skills() {
                     {skill}
                   </span>
                 ))}
+               </div>
               </div>
-            </div>
+            </SpotlightCard>
           ))}
         </div>
 

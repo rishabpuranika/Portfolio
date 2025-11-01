@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+import GradientText from './GradientText';
 
 export default function Hero() {
   return (
@@ -11,9 +12,14 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="custom-class"
+            >
               KN Rishab Puranika
-            </span>
+            </GradientText>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-4 animate-fade-in-delay-1">
@@ -24,7 +30,7 @@ export default function Hero() {
             Machine Learning Enthusiast | Full Stack Developer | Open Source Contributor
           </p>
 
-          <div className="flex justify-center space-x-6 mb-8 animate-fade-in-delay-3">
+           <div className="flex justify-center space-x-6 mb-8 animate-fade-in-delay-3">
             <a
               href="https://github.com/rishabpuranika"
               target="_blank"

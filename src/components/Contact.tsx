@@ -1,5 +1,5 @@
 import { Mail, Phone, Github, Linkedin, MapPin } from 'lucide-react';
-import StarBorder from './StarBorder';
+import ShinyText from './ShinyText';
 import SpotlightCard from './SpotlightCard';
 
 export default function Contact() {
@@ -113,15 +113,17 @@ export default function Contact() {
                 </div>
               </div>
 
-              <StarBorder
-                as="a"
-                href="mailto:145rishab@gmail.com"
-                className="inline-block w-full mt-6 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium text-center hover:shadow-lg hover:shadow-cyan-500/50 hover:scale-105 transition-all duration-300"
-                color="cyan"
-                speed="5s"
-              >
-                Send Email
-              </StarBorder>
+               <a
+                 href="mailto:145rishab@gmail.com"
+                 className="inline-block w-full mt-6 px-6 py-3 bg-black text-white rounded-lg font-medium text-center hover:shadow-lg hover:shadow-black/50 hover:scale-105 transition-all duration-300"
+               >
+                 <ShinyText
+                   text="Send Email"
+                   disabled={false}
+                   speed={3}
+                   className='custom-class'
+                 />
+               </a>
             </div>
           </div>
         </div>

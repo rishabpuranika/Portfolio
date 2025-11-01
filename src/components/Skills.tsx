@@ -91,7 +91,7 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50" style={{ height: '200px', position: 'relative', overflow: 'hidden', marginBottom: '2rem' }}>
+        <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50" style={{ height: '100px', position: 'relative', overflow: 'hidden', marginBottom: '2rem' }}>
           <LogoLoop
             logos={techLogos}
             speed={120}

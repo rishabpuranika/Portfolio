@@ -1,6 +1,24 @@
-import { useRef, useEffect, useCallback } from 'react';
+import React, { useRef, useEffect, useCallback } from 'react';
 
-const ClickSpark = ({
+interface Spark {
+  x: number;
+  y: number;
+  angle: number;
+  startTime: number;
+}
+
+interface ClickSparkProps {
+  sparkColor?: string;
+  sparkSize?: number;
+  sparkRadius?: number;
+  sparkCount?: number;
+  duration?: number;
+  easing?: string;
+  extraScale?: number;
+  children?: React.ReactNode;
+}
+
+const ClickSpark: React.FC<ClickSparkProps> = ({
   sparkColor = '#fff',
   sparkSize = 10,
   sparkRadius = 15,
@@ -10,9 +28,9 @@ const ClickSpark = ({
   extraScale = 1.0,
   children
 }) => {
-  const canvasRef = useRef(null);
-  const sparksRef = useRef([]);
-  const startTimeRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const sparksRef = useRef<Spark[]>([]);
+  const startTimeRef = useRef<number | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -21,7 +39,7 @@ const ClickSpark = ({
     const parent = canvas.parentElement;
     if (!parent) return;
 
-    let resizeTimeout;
+    let resizeTimeout: ReturnType<typeof setTimeout>;
 
     const resizeCanvas = () => {
       const { width, height } = parent.getBoundingClientRect();

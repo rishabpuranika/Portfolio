@@ -3,7 +3,7 @@ import SpotlightCard from './SpotlightCard';
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/30">
+    <section id="education" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">

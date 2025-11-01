@@ -51,7 +51,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/30">
+    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
@@ -91,7 +91,7 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50" style={{ height: '200px', position: 'relative', overflow: 'hidden', marginBottom: '2rem' }}>
+        <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50" style={{ height: '200px', position: 'relative', overflow: 'hidden', marginBottom: '2rem' }}>
           <LogoLoop
             logos={techLogos}
             speed={120}

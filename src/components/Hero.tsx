@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 import GradientText from './GradientText';
+import ShinyText from './ShinyText';
 
 export default function Hero() {
   return (
@@ -63,9 +64,14 @@ export default function Hero() {
 
           <a
             href="#contact"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full font-medium hover:shadow-lg hover:shadow-cyan-500/50 hover:scale-105 transition-all duration-300 animate-fade-in-delay-4"
+            className="inline-block px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-full font-medium hover:shadow-lg hover:shadow-slate-500/50 hover:scale-105 transition-all duration-300 animate-fade-in-delay-4 border border-slate-600"
           >
-            Get In Touch
+            <ShinyText
+              text="Get In Touch"
+              disabled={false}
+              speed={3}
+              className='custom-class'
+            />
           </a>
         </div>
       </div>

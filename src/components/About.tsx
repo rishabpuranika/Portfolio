@@ -25,33 +25,33 @@ export default function About() {
             </p>
           </div>
 
-          <div className="space-y-6">
-            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-cyan-400 mb-4">Highlights</h3>
-              <ul className="space-y-3 text-gray-300">
-                <li className="flex items-start">
-                  <span className="text-cyan-400 mr-2">▹</span>
-                  <span>8.3 CGPA in Information Science & Engineering</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cyan-400 mr-2">▹</span>
-                  <span>5 Star rating in C++ & SQL on HackerRank</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cyan-400 mr-2">▹</span>
-                  <span>Certified in Machine Learning from Coursera</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cyan-400 mr-2">▹</span>
-                  <span>Active Open Source Contributor</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cyan-400 mr-2">▹</span>
-                  <span>Multilingual: English, Kannada, Telugu, Hindi</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+           <div className="space-y-6">
+             <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300">
+               <h3 className="text-xl font-semibold text-cyan-400 mb-4">Highlights</h3>
+               <ul className="space-y-3 text-gray-300">
+                 <li className="flex items-start">
+                   <span className="text-cyan-400 mr-2">▹</span>
+                   <span>8.3 CGPA in Information Science & Engineering</span>
+                 </li>
+                 <li className="flex items-start">
+                   <span className="text-cyan-400 mr-2">▹</span>
+                   <span>5 Star rating in C++ & SQL on HackerRank</span>
+                 </li>
+                 <li className="flex items-start">
+                   <span className="text-cyan-400 mr-2">▹</span>
+                   <span>Certified in Machine Learning from Coursera</span>
+                 </li>
+                 <li className="flex items-start">
+                   <span className="text-cyan-400 mr-2">▹</span>
+                   <span>Active Open Source Contributor</span>
+                 </li>
+                 <li className="flex items-start">
+                   <span className="text-cyan-400 mr-2">▹</span>
+                   <span>Multilingual: English, Kannada, Telugu, Hindi</span>
+                 </li>
+               </ul>
+             </div>
+           </div>
         </div>
       </div>
     </section>

@@ -123,8 +123,8 @@ export default function Projects() {
           ))}
         </div>
 
-        <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
-          <div className="mt-16 bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50">
+        <SpotlightCard className="custom-spotlight-card mt-12" spotlightColor="rgba(0, 229, 255, 0.2)">
+          <div className="mt-20 bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50" style={{ marginTop: '0rem' }}>
             <h3 className="text-2xl font-bold text-cyan-400 mb-6">Open Source Contributions</h3>
           <div className="space-y-4">
             <div>

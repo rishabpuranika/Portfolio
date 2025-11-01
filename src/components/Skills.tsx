@@ -1,6 +1,6 @@
 import { Code, Database, Cloud, Cpu, Terminal, Globe } from 'lucide-react';
 import LogoLoop from './LogoLoop';
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { SiPython, SiCplusplus, SiC, SiDart, SiTypescript, SiScikitlearn, SiPytorch, SiReact, SiNextdotjs, SiTailwindcss, SiStreamlit, SiMysql, SiGit, SiGithub, SiDocker, SiKubernetes, SiLinux, SiUbuntu } from 'react-icons/si';
 import SpotlightCard from './SpotlightCard';
 
 export default function Skills() {
@@ -44,11 +44,25 @@ export default function Skills() {
   ];
 
   const techLogos = [
-    { node: <SiReact />, title: "React", href: "https://react.dev" },
-    { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-    { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-    { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
-  ];
+  { node: <SiPython />, title: "Python", href: "https://www.python.org" },
+  { node: <SiCplusplus />, title: "C++", href: "https://isocpp.org" },
+  { node: <SiC />, title: "C", href: "https://en.wikipedia.org/wiki/C_(programming_language)" },
+  { node: <SiDart />, title: "Dart", href: "https://dart.dev" },
+  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+  { node: <SiScikitlearn />, title: "Scikit-learn", href: "https://scikit-learn.org" },
+  { node: <SiPytorch />, title: "PyTorch", href: "https://pytorch.org" },
+  { node: <SiReact />, title: "React", href: "https://react.dev" },
+  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  { node: <SiStreamlit />, title: "Streamlit", href: "https://streamlit.io" },
+  { node: <SiMysql />, title: "SQL", href: "https://www.mysql.com" },
+  { node: <SiGit />, title: "Git", href: "https://git-scm.com" },
+  { node: <SiGithub />, title: "GitHub", href: "https://github.com" },
+  { node: <SiDocker />, title: "Docker", href: "https://www.docker.com" },
+  { node: <SiKubernetes />, title: "Kubernetes", href: "https://kubernetes.io" },
+  { node: <SiLinux />, title: "Linux", href: "https://www.linux.org" },
+  { node: <SiUbuntu />, title: "Ubuntu", href: "https://ubuntu.com" },
+];
 
   return (
     <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -91,7 +105,7 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50" style={{ height: '100px', position: 'relative', overflow: 'hidden', marginBottom: '2rem' }}>
+        <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50" style={{ height: '100px', position: 'relative', overflow: 'hidden', marginTop: '3rem', marginBottom: '2rem', display: 'flex', alignItems: 'center' }}>
           <LogoLoop
             logos={techLogos}
             speed={120}
@@ -100,8 +114,8 @@ export default function Skills() {
             gap={40}
             pauseOnHover
             scaleOnHover
-            fadeOut
-            fadeOutColor="#1e293b"
+            fadeOut={true}
+            fadeOutColor="#000000"
             ariaLabel="Technology partners"
           />
         </div>

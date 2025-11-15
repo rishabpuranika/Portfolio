@@ -18,7 +18,8 @@ export default function Navigation() {
       textColor: "#fff",
       links: [
         { label: "Projects", href: "#projects", ariaLabel: "Projects" },
-        { label: "Education", href: "#education", ariaLabel: "Education" }
+        { label: "Education", href: "#education", ariaLabel: "Education" },
+        { label: "Resume", href: "#resume", ariaLabel: "Resume" }
       ]
     },
     {

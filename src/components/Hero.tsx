@@ -1,9 +1,17 @@
-import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, Download} from 'lucide-react';
 import GradientText from './GradientText';
 import ShinyText from './ShinyText';
 import StarBorder from './StarBorder';
 
 export default function Hero() {
+  const handleDownload = () => {
+    // This will download the resume PDF from public folder
+    const link = document.createElement('a');
+    link.href = '/KNRISHAB_main.pdf';
+    link.download = 'KNRishabPuranika_Resume.pdf';
+    link.click();
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       <div className="absolute inset-0 overflow-hidden">
@@ -62,6 +70,12 @@ export default function Hero() {
             >
               <Phone size={24} />
             </a>
+             <button
+               onClick={handleDownload}
+               className="p-3 bg-slate-800/50 rounded-full hover:bg-cyan-500/20 hover:scale-110 transition-all duration-300"
+             >
+               <Download size={20} />
+             </button>
            </div>
 
            <StarBorder

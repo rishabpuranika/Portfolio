@@ -4,6 +4,18 @@ import SpotlightCard from './SpotlightCard';
 export default function Projects() {
   const projects = [
     {
+      title: 'Real-Time Edge Viewer',
+      description: 'High-performance Android application for real-time Canny edge detection with a synchronized web viewer.',
+      tech: ['Android (Kotlin)', 'C++ (OpenCV)', 'OpenGL ES', 'TypeScript', 'WebSockets'],
+      highlights: [
+        'Native C++ image processing via JNI for real-time performance',
+        'Low-latency MJPEG streaming & WebSocket control',
+        'Synchronized FPS counter between Android and Web'
+      ],
+      github: 'https://github.com/rishabpuranika/RealTime-Edge-Viewer',
+      color: 'from-violet-500 to-fuchsia-500'
+    },
+    {
       title: 'TrueSynth',
       description: 'A sophisticated multi-agent system using "Generate, Verify, Compare" architecture to reduce AI hallucinations and enhance factual accuracy.',
       tech: ['Python', 'LangChain', 'LLMs', 'Tavily API'],
